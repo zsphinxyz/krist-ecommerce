@@ -40,7 +40,7 @@ function ReviewCard() {
 export default function Review() {
   return (
     <div className="py-10 mt-10 bg-neutral-100">
-      <h1 className="header px-3 md:px-5">What our Costomer say's</h1>
+      <h1 className="header px-3 md:px-5">What our Costomer say&apos;s</h1>
 
       <div className="flex *:flex-shrink-0 overflow-hidden gap-5 p-2">
         <ReviewCard />

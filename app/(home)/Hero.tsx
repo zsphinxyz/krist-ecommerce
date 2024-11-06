@@ -9,7 +9,7 @@ export default function Hero() {
 
         <div className="pl-10 w-max z-10 md:mx-0 mx-auto cursor-default">
           <p className="text-2xl xl:text-3xl font-gantari font-medium">Classic Exclusive</p>
-          <h1 className="text-5xl lg:text-6xl xl:text-7xl font-black font-serif my-3">Women's Collection</h1>
+          <h1 className="text-5xl lg:text-6xl xl:text-7xl font-black font-serif my-3">Women&apos;s Collection</h1>
           <p className="font-gantari text-lg xl:text-xl font-medium ml-2">UPTO 40% OFF</p>
 
           <Button className='mt-5'>Shop Now <ArrowRight /></Button>

@@ -1,5 +1,4 @@
 import type { Metadata } from "next";
-import localFont from "next/font/local";
 import {Gantari} from 'next/font/google'
 import "./globals.css";
 import Nav from "@/components/Nav";
