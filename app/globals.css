@@ -105,4 +105,17 @@ body {
     }
   }
 
+  .ani-gradient{
+    animation: aniGra 2s ease infinite;
+  }
+
+  @keyframes aniGra{
+    from{
+      left: -100%;
+    }
+    to{
+      left:100%;
+    }
+  }
+
 }

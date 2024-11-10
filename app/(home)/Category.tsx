@@ -13,7 +13,7 @@ export default function Category() {
         <div className="space-x-3 select-none">
           <label htmlFor="next" className="px-3 py-1 rounded-md bg-black hover:bg-black/80 block text-white cursor-pointer">
             <input type="checkbox" id="next" className="peer appearance-none hidden" onClick={() => setNextCati(!nextCati)} />
-            <ArrowRight className="peer-checked:scale-[-1] transition-transform" />
+            <ArrowRight className={`${nextCati ? 'scale-[-1]' : 'scale-[1]'} transition-transform`} />
           </label>
         </div>
 

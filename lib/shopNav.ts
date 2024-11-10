@@ -1,101 +1,101 @@
 export const Men = [
   {
     title: 'T-Shirts',
-    href: '',
+    href: '/products?c=Men%27s%20Wear',
   },
   {
     title: 'Casual Shirts',
-    href: '',
+    href: '/products?c=Men%27s%20Wear',
   },
   {
     title: 'Formal Shirts',
-    href: '',
+    href: '/products?c=Men%27s%20Wear',
   },
   {
     title: 'Jackets',
-    href: '',
+    href: '/products?c=Men%27s%20Wear',
   },
   {
     title: 'Blazers & Coats',
-    href: '',
+    href: '/products?c=Men%27s%20Wear',
   }
 ]
 
-export const Indian = [
+export const Watches = [
   {
-    title: 'Kurtas & Kurta Sets',
-    href: '',
+    title: 'Digital Watches',
+    href: '/products?c=Watches',
   },
   {
-    title: 'Sherwanis',
-    href: '',
+    title: 'Watches',
+    href: '/products?c=Watches',
   },
 ]
 
 export const Women = [
   {
     title: 'Kurtas & Suits',
-    href: ''
+    href: '/products?c=Women'
   },
   {
     title: 'Sarees',
-    href: ''
+    href: '/products?c=Women'
   },
   {
     title: 'Ehnic Wear',
-    href: ''
+    href: '/products?c=Women'
   },
   {
     title: 'Lehenga Cholis',
-    href: ''
+    href: '/products?c=Women'
   },
   {
     title: 'Jackets',
-    href: ''
+    href: '/products?c=Women'
   },
 ]
 
-export const Western = [
+export const Accessories = [
   {
     title: 'Dresses',
-    href: ''
+    href: '/products?c=Accessories'
   },
   {
     title: 'Jumpsuits',
-    href: ''
+    href: '/products?c=Accessories'
   },
 ]
 
-export const Footwear = [
+export const Shoes = [
   {
     title: 'Flats',
-    href: ''
+    href: '/products?c=Shoes'
   },
   {
     title: 'Casurl Shoes',
-    href: ''
+    href: '/products?c=Shoes'
   },
   {
     title: 'Heels',
-    href: ''
+    href: '/products?c=Shoes'
   },
   {
     title: 'Boots',
-    href: ''
+    href: '/products?c=Shoes'
   },
   {
     title: 'Sports Shoes & Floaters',
-    href: ''
+    href: '/products?c=Shoes'
   },
 ]
 
-export const Product = [
+export const Bags = [
   {
-    title: '360 Product Viewer',
+    title: 'Backpack',
     href: ''
   },
   {
-    title: 'Product with Video',
+    title: 'Leather Purse',
     href: ''
   },
 ]
@@ -103,34 +103,34 @@ export const Product = [
 export const Kids = [
   {
     title: 'T-Shirts',
-    href: ''
+    href: '/products?c=Kids'
   },
   {
     title: 'Shirts',
-    href: ''
+    href: '/products?c=Kids'
   },
   {
     title: 'Jeans',
-    href: ''
+    href: '/products?c=Kids'
   },
   {
     title: 'Trousers',
-    href: ''
+    href: '/products?c=Kids'
   },
   {
     title: 'Party Wear',
-    href: ''
+    href: '/products?c=Kids'
   },
   {
     title: 'Innerwear & Thermal',
-    href: ''
+    href: '/products?c=Kids'
   },
   {
     title: 'Track Pants',
-    href: ''
+    href: '/products?c=Kids'
   },
   {
     title: 'Value Pack',
-    href: ''
+    href: '/products?c=Kids'
   },
 ]

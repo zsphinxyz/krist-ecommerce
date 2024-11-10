@@ -12,17 +12,17 @@ import {
 import Link from "next/link"
 import { Button } from "./ui/button"
 import { Heart, Search, ShoppingCartIcon } from "lucide-react"
-import { Men,Indian,Women,Western,Footwear,Product,Kids } from "@/lib/shopNav"
+import { Men,Watches,Women,Accessories,Shoes,Bags,Kids } from "@/lib/shopNav"
 
 export default function Nav() {
 
 
   return (
-    <nav className="flex justify-between px-5 md:px-10 bg-white items-center py-2 fixed top-0 w-full z-50 shadow-sm">
+    <nav className="flex justify-between px-5 md:px-10 bg-white items-center py-2 w-full max-w-screen-2xl fixed top-0 z-50 shadow-sm">
 
-      <div className="select-none cursor-default">
+      <Link href='/' className="select-none">
         <span className="text-3xl font-bold font-serif">Krist</span>
-      </div>
+      </Link>
 
       <NavigationMenu className="hidden md:block ">
         <NavigationMenuList>
@@ -48,9 +48,9 @@ export default function Nav() {
                       <ListItem key={men.title} {...men} />
                     ))}
 
-                    <li className="font-bold pt-3">Indian & Festive Wear</li>
-                    {Indian.map(indian => (
-                      <ListItem key={indian.title} {...indian} />
+                    <li className="font-bold pt-3">Watches</li>
+                    {Watches.map(watch => (
+                      <ListItem key={watch.title} {...watch} />
                     ))}
                   </ul>
 
@@ -60,21 +60,21 @@ export default function Nav() {
                       <ListItem key={women.title} {...women} />
                     ))}
 
-                    <li className="font-bold pt-3">Western Wear</li>
-                    {Western.map( western => (
-                      <ListItem key={western.title} {...western} />
+                    <li className="font-bold pt-3">Accessories</li>
+                    {Accessories.map( accessory => (
+                      <ListItem key={accessory.title} {...accessory} />
                     ))}
                   </ul>
 
                   <ul className="space-y-2">
-                    <li className="font-bold">Footwear</li>
-                    {Footwear.map( footwear => (
-                      <ListItem key={footwear.title} {...footwear} />
+                    <li className="font-bold">Shoes</li>
+                    {Shoes.map( shoe => (
+                      <ListItem key={shoe.title} {...shoe} />
                     ))}
 
-                    <li className="font-bold pt-3">Product Features</li>
-                    {Product.map(product => (
-                      <ListItem key={product.title} {...product} />
+                    <li className="font-bold pt-3">Bags</li>
+                    {Bags.map(bag => (
+                      <ListItem key={bag.title} {...bag} />
                     ))}
 
                   </ul>

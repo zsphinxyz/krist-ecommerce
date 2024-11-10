@@ -22,7 +22,9 @@ export default function RootLayout({
         className={`${gantari.variable} max-w-screen-2xl container mx-auto antialiased`}
       >
         <Nav />
-        {children}
+        <main className="mt-14">
+          {children}
+        </main>
       </body>
     </html>
   );
