@@ -35,23 +35,23 @@ export const Watches = [
 export const Women = [
   {
     title: 'Kurtas & Suits',
-    href: '/products?c=Women'
+    href: '/products?c=Women%27s%20Wear'
   },
   {
     title: 'Sarees',
-    href: '/products?c=Women'
+    href: '/products?c=Women%27s%20Wear'
   },
   {
     title: 'Ehnic Wear',
-    href: '/products?c=Women'
+    href: '/products?c=Women%27s%20Wear'
   },
   {
     title: 'Lehenga Cholis',
-    href: '/products?c=Women'
+    href: '/products?c=Women%27s%20Wear'
   },
   {
     title: 'Jackets',
-    href: '/products?c=Women'
+    href: '/products?c=Women%27s%20Wear'
   },
 ]
 

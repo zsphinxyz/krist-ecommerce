@@ -7,6 +7,7 @@ export type ItemType = {
     reviews: number,
     color: string[],
     img: string,
+    hot?: boolean,
 }
 
 export type ProductType = {
@@ -30,6 +31,7 @@ export const products:ProductType[] = [
                 "inStock": true,
                 "reviews": 4,
                 "color": ["white", "black", "gray"],
+                "hot": true,
                 // "img": "https://raw.githubusercontent.com/zsphinxyz/ba/refs/heads/main/krist/Men's%20Wear/classic%20t-shirt.webp"
                 "img": "https://lh3.googleusercontent.com/d/15bxnlP5sNFzS7cYW4RNa7Sp_pcP51cSo"
             },
@@ -51,7 +53,7 @@ export const products:ProductType[] = [
                 "sizes": ["30", "32", "34", "36"],
                 "inStock": false,
                 "reviews": 3,
-                "color": ["dark blue", "black"],
+                "color": ["darkblue", "black"],
                 // "img": "https://raw.githubusercontent.com/zsphinxyz/ba/refs/heads/main/krist/Men's%20Wear/slim%20fit%20jeans.jpeg"
                 "img": "https://lh3.googleusercontent.com/d/13Pn3Qr4kn5ckiny2EzpiHLB-1vM9WCyh"
             },
@@ -63,6 +65,7 @@ export const products:ProductType[] = [
                 "inStock": true,
                 "reviews": 4,
                 "color": ["brown", "black"],
+                "hot": true,
                 // "img": "https://raw.githubusercontent.com/zsphinxyz/ba/refs/heads/main/krist/Men's%20Wear/leather%20jacket.jpg"
                 "img": "https://lh3.googleusercontent.com/d/1luFD-bAx7CG-MXWlgv3fsphdMK4CJnPG"
             },
@@ -117,7 +120,7 @@ export const products:ProductType[] = [
                 "sizes": ["S", "M", "L", "XL"],
                 "inStock": true,
                 "reviews": 4,
-                "color": ["white", "light blue", "gray"],
+                "color": ["white", "lightblue", "gray"],
                 // "img": "https://raw.githubusercontent.com/zsphinxyz/ba/refs/heads/main/krist/Men's%20Wear/formal%20shirt.jpg"
                  "img": "https://lh3.googleusercontent.com/d/1Z50XKrZJksYFMIUTj-X9Iheg172gTrPz"
             },
@@ -145,6 +148,7 @@ export const products:ProductType[] = [
                 "inStock": true,
                 "reviews": 4,
                 "color": ["white", "pink", "blue"],
+                "hot": true,
                 // "img" : "https://raw.githubusercontent.com/zsphinxyz/ba/refs/heads/main/krist/Women's%20Wear/blouse%20top.jpg"
                  "img": "https://lh3.googleusercontent.com/d/1WtAPQn1OvJ1-xE5mBqtxwbELzD-shnfk"
             },
@@ -155,7 +159,8 @@ export const products:ProductType[] = [
                 "sizes": ["26", "28", "30", "32"],
                 "inStock": true,
                 "reviews": 5,
-                "color": ["dark blue", "black"],
+                "color": ["darkblue", "black"],
+                "hot": true,
                 // "img" : "https://raw.githubusercontent.com/zsphinxyz/ba/refs/heads/main/krist/Women's%20Wear/skinny%20jeans.jpg"
                  "img": "https://lh3.googleusercontent.com/d/1_QHYjCj4X5Gk_v-I1YnLb8orWHcDrtOv"
             },
@@ -261,6 +266,7 @@ export const products:ProductType[] = [
                 "inStock": true,
                 "reviews": 5,
                 "color": ["white", "black", "blue"],
+                "hot": true,
                 // "img" : "https://raw.githubusercontent.com/zsphinxyz/ba/refs/heads/main/krist/Shoes/running%20sneakers.jpg"
                  "img": "https://lh3.googleusercontent.com/d/1U5CKu5SKb5dmn4OA5F4rHZ1gKPvtAVDk"
             },
@@ -283,6 +289,7 @@ export const products:ProductType[] = [
                 "inStock": false,
                 "reviews": 4,
                 "color": ["black", "red"],
+                "hot": true,
                 // "img" : "https://raw.githubusercontent.com/zsphinxyz/ba/refs/heads/main/krist/Shoes/heeled%20sandals.jpg"
                 "img": "https://lh3.googleusercontent.com/d/1T-Ltdod33gziMrSy_pRXt3TYuBEF1blt"
             },

@@ -1,4 +1,3 @@
-import CardLoading from "@/components/CardLoading"
 import SellerCard from "@/components/Seller_Card"
 import { ItemType, ProductType } from "@/lib/products"
 import Link from "next/link"
@@ -9,9 +8,10 @@ export default async function Page({searchParams}:{searchParams:Promise<{ [c: st
   const products = await res.json()
   const c = (await searchParams).c || "Men's Wear"
 
+  // console.log(products[0].items[0])
+
   return (
     <section className="flex bg-white min-h-dvh">
-
       <div className="bg-neutral-200 basis-1/3 max-w-44 pt-3">
         <p className="font-bold mb-2">Product Categories</p>
         {
@@ -25,15 +25,17 @@ export default async function Page({searchParams}:{searchParams:Promise<{ [c: st
 
       <div className="basis-full">
         <h1 className="text-2xl font-medium">{c}</h1>
-        {
-          products.filter((product:ProductType) => product.category == c)[0].items.map( (item:ItemType) => (
-            <div className="" key={item.name} >
-              <Suspense fallback={<CardLoading />}>
-                <SellerCard img={item.img} title={item.name} desc={item.description} price1={item.price} href={`products/${Buffer.from(item.name+'|'+c).toString('base64')}`}   />
-              </Suspense>
-            </div>
-          ) )
-        }
+        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-3">
+          {
+            products.filter((product:ProductType) => product.category == c)[0].items.map( (item:ItemType) => (
+              <div className="" key={item.name} >
+                <Suspense fallback={<div className="w-52 h-32 rounded-md mx-auto mb-5 bg-neutral-500 animate-pulse" />}>
+                  <SellerCard img={item.img} title={item.name} desc={item.description} price1={item.price} href={`products/${Buffer.from(item.name+'|'+c).toString('base64')}`} review={item.reviews} hot={item.hot}  />
+                </Suspense>
+              </div>
+            ) )
+          }
+        </div>
       </div>
 
       <div className="">
